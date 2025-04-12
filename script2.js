@@ -37,7 +37,7 @@ function getRecommendation(mood, genre, weather) {
             "pop": {
                 song: "Happy - Pharrell Williams",
                 albumCover: "https://upload.wikimedia.org/wikipedia/en/2/23/Pharrell_Williams_-_Happy.jpg",
-                spotifyLink: "https://open.spotify.com/track/your_track_id",
+                spotifyLink: "https://open.spotify.com/track/60nZcImufyMA1MKQY3dcCH?si=40ca7e69bdb8449b",
                 melonLink: "https://www.melon.com/album/detail.htm?albumId=2223220#"
             },
             "rock": {
