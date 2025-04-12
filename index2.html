@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>음악 추천 사이트</h1>
+        
+        <div class="input-section">
+            <label for="mood">기분 선택:</label>
+            <select id="mood">
+                <option value="happy">행복</option>
+                <option value="sad">슬픔</option>
+                <option value="energetic">활기참</option>
+                <option value="relaxed">편안함</option>
+            </select>
+
+            <label for="genre">장르 선택:</label>
+            <select id="genre">
+                <option value="pop">팝</option>
+                <option value="rock">록</option>
+                <option value="classical">클래식</option>
+                <option value="jazz">재즈</option>
+            </select>
+
+            <label for="weather">날씨 선택:</label>
+            <select id="weather">
+                <option value="sunny">맑음</option>
+                <option value="rainy">비</option>
+                <option value="cloudy">흐림</option>
+                <option value="snowy">눈</option>
+            </select>
+
+            <button id="recommendBtn">추천받기</button>
+        </div>
+
+        <div id="recommendation" class="recommendation-section">
+            <h2>추천된 노래</h2>
+            <div id="songContainer">
+                <div id="albumCoverWrapper">
+                    <div id="innerHole"></div> <!-- LP판의 구멍 -->
+                    <img id="albumCover" src="" alt="앨범 표지">
+                </div>
+                <ul id="songList">
+                    <!-- 추천된 노래가 여기에 표시됩니다 -->
+                </ul>
+                <a id="spotifyLink" href="" target="_blank" style="display: none;">Spotify에서 듣기</a>
+                <a id="melonLink" href="" target="_blank" style="display: none;">멜론에서 듣기</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

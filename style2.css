@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #FF69B4; /* 분홍색 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #FF1493; /* 클릭 시 색상 변화를 위한 더 짙은 분홍색 */
+}
+
+.recommendation-section {
+    margin-top: 20px;
+}
+
+#songContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#albumCoverWrapper {
+    width: 250px; /* 외부 원의 크기 */
+    height: 250px;
+    background-color: #000; /* 바깥 원은 검은색 */
+    border-radius: 50%; /* 원형 모양 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+    margin: 0 auto; /* 중앙 정렬 */
+    position: relative; /* 자식 요소가 부모 안에서 위치할 수 있게 설정 */
+    animation: rotate 10s linear infinite; /* 10초 동안 한 바퀴 회전, 무한 반복 */
+}
+
+#innerHole {
+    width: 20px; /* 작은 구멍의 크기 */
+    height: 20px;
+    background-color: #ffffff; /* 내부 원(구멍)은 흰색 */
+    border-radius: 50%; /* 원형 모양 */
+    position: absolute; /* 부모 요소 안에서 절대 위치 */
+    top: 50%; /* 수직 중앙 정렬 */
+    left: 50%; /* 수평 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 정확히 중앙에 오도록 */
+    z-index: 1; /* 구멍이 위로 오도록 설정 */
+    border: 2px solid #000000;
+}
+
+#albumCover {
+    width: 130px; /* 내부 원의 크기 */
+    height: 130px;
+    object-fit: cover; /* 이미지가 잘리지 않게 비율 맞춰서 자르기 */
+    border-radius: 50%; /* 내부 원형 */
+    z-index: 0; /* 앨범 표지가 아래로 가도록 설정 */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#spotifyLink, #melonLink {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #FF69B4; /* Spotify 색상 */
+    text-decoration: none;
+}
+
+#spotifyLink:hover, #melonLink:hover {
+    color: #FF69B4; /* Spotify 색상 */
+    text-decoration: underline;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
